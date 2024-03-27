@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Jogo de Números Romanos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="info">
+        <div class="input">
+            <h1>Descubra o Número Romano</h1>
+            <p>Qual é o número arábico correspondente ao número romano abaixo?</p>
+            <div id="question">XIV</div>
+            <input type="text" id="answer" placeholder="Digite o número arábico aqui">
+        </div>
+        <button id="btn" onclick="checkAnswer()">Verificar</button>
+        <p id="result"></p>
+        <button id="new-question-btn">Gerar Nova Pergunta</button>
+
+        <div id="tab">
+            <table id="roman-table">
+                <tr>
+                    <td>I</td>
+                    <td>IV</td>
+                    <td>V</td>
+                    <td>IX</td>
+                    <td>X</td>
+                    <td>XIX</td>
+                    <td>L</td>
+                    <td>XC</td>
+                    <td>C</td>
+                    <td>CD</td>
+                    <td>D</td>
+                    <td>CM</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>19</td>
+                    <td>50</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>900</td>
+                    <td>1000</td>
+                </tr>
+            </table>
+        </div>
+        <h4>Feito por Esteves</h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

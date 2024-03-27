@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,800;1,200;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --liner-gradient: linear-gradient(90deg, #071e22 ,#1d7874, #679289);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:var(--liner-gradient);
+}
+
+#info{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#info h1{
+    font-size: 30px;
+    position: relative;
+}
+
+#info P{
+    font-size: 24px;
+    color: #1d7874;
+}
+
+#info h1::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 150px;
+    background: var(--liner-gradient);
+    bottom: 5px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    color: #c8cde6;
+    font-weight: 500px;
+}
+
+.input input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #10afa7;
+    color:#fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#result{
+    text-align: center;
+}
+
+/* Arrumando o botão de verificar */
+#btn{
+    background: var(--liner-gradient);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor:pointer
+}
+
+/* Arrumando o botão de geração de perguntas */
+#new-question-btn{
+    background: var(--liner-gradient);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor:pointer
+}
+
+/*Centralizandoa tabela*/
+#tab{
+    color: #c8cde6;
+    margin: auto;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#answer {
+    width: 50%;
+}
+
+#result {
+    font-weight: bold;
+}
+
+h4{
+    text-align: center;
+    color: antiquewhite;
+}
